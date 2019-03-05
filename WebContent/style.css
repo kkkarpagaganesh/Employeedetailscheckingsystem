@@ -1,0 +1,27 @@
+
+body{
+         background-image: url('beautiful.jpg');
+         background-repeat: no-repeat;
+         background-size:cover;
+         }
+
+
+input[type=Number],input[type=text], input[type=password], input[type=email], input[type=radio], select[name=Department] {
+  width: 100%;
+  padding: 9px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0DF329    ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.big{ width: 1em; height: 1em; }

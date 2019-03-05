@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search by ID</title>
+<style>
+body {
+	background-image: url('beautiful.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+input[type=number] {
+	width: 100%;
+	padding: 9px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+</style>
+
+</head>
+<body align="center">
+	<form method="post" action="SearchByID">
+	<h1>serchhh</h1>
+		<h2 align="center" style="color: skyblue">SEARCH AN EMPLOYEE</h2>
+		<table align="center" style="padding: 150px 70px">
+
+			<tr>
+				<td><font size="4">Employee ID</font></td>
+			</tr>
+			<tr>
+				<td><input type="number" name="Id" placeholder="Enter ID"
+					required></td>
+			</tr>
+			<tr>
+
+				<td><button type="submit" style="height: 50px; width: 100px;">Search</button>
+					<br></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

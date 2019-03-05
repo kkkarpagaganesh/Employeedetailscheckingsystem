@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SIGN UP</title>
+<style>
+body {
+	background-image: url('registration-form.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+form {border: 100px solid #f1f1f1;}
+input[type=text],input[type=email], input[type=password]{
+  width: 100%;
+  padding: 9px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+	<form method="post" action="RegistrationController">
+	<h1 align="center"  style="color: skyblue">REGISTRATION FORM</h1>
+		<table align="center" style="padding: 50px">
+			<tbody>
+				<tr>
+					<td><font size="4">username</font></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="username" required><br></td>
+				</tr>
+				<tr>
+					<td><font size="4">email</font></td>
+				</tr>
+				<tr>
+					<td><input type="email" name="email" required><br></td>
+				</tr>
+				<tr>
+					<td><font size="4">password</font></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="password" required><br></td>
+				</tr>
+				<tr>
+					<td>confirm password<br></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="confirm password" required><br></td>
+				</tr>
+				<tr>
+					<td><button type="submit">Register</button>
+						<br></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

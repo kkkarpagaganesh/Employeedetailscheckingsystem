@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SIGN IN</title>
+<style>
+body{
+         background-image: url('Tree-wallpaper.jpg');
+         background-repeat: no-repeat;
+         background-size:cover;
+         }
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 9px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0DF329    ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+</style>
+</head>
+<body >
+<!--img src="businessemployee.jpg" alt="businessemployee Icon" style="width:128px;height:128px;"  -->
+
+<!-- body style="background-color:lightgreen;"-->
+
+<!--  body {style="background-image: url('chainsys.jpg')"  -->
+
+	<form method="post" action="LoginController">
+	<h1>SIGN IN</h1>
+	 
+		<table align="left" style="padding: 150px 70px">
+
+				<tr>
+					<td><font size="6">email</font></td>
+								</tr>
+								<tr>
+								<td><input type="email" name="email" required></td>
+								</tr>
+				<tr>
+					<td><font size="6">password</font></td>
+				</tr>
+				<tr>
+				<td><input type="password" name="password" required><br></td>
+				</tr>
+				<tr>
+					<td><button type="submit"  style="height:50px; width:100px;">Login</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SIGN UP</title>
+<style>
+body {
+	background-image: url('nature-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+input[type=number], input[type=password] {
+	width: 100%;
+	padding: 9px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+</style>
+</head>
+<body>
+	<form method="post" action="SecretController">
+		<h2>ENTER ADMIN CODE TO SIGN UP!</h2>
+		<table align="left" style="padding: 150px 70px">
+			<tbody>
+				<tr>
+					<td><font size="4">Enter your ID</font></td>
+				</tr>
+				<tr>
+					<td><input type="number" name="Id" placeholder="Enter ID"
+						required></td>
+				</tr>
+				<tr>
+					<td><font size="4">Enter 4 digit PIN</font><font size="2">(PIN
+							manually send to you)</font></td>
+				</tr>
+
+				<tr>
+					<td><input type="password" name="password"
+						placeholder="Enter password" required><br></td>
+				</tr>
+				<tr>
+					<td><button type="submit" style="height: 40px; width: 70px;">Login</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>
