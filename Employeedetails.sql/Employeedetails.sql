@@ -1,16 +1,33 @@
-CREATE TABLE chainsysregister(Id NUMBER(15) PRIMARY KEY ,name VARCHAR(15),password VARCHAR(15),email VARCHAR(15) NOT NULL,sex VARCHAR(10),department VARCHAR(25));
-SELECT * FROM  CHAINSYSREGISTER;
+create table chainsysregister(
+id number(10) primary key,
+name varchar2(50)not null,
+password varchar2(20),
+email varchar2(30)not null unique,
+sex varchar2(10)not null,
+department varchar2(30) not null,
+check(sex in ('Male', 'Female')));
 
-CREATE TABLE SIGNUP(USERNAME VARCHAR(15),EMAIL VARCHAR(15),PASSWORD VARCHAR(15),CONFIRM_PASSWORD varchar(15));
-SELECT * FROM  SIGNUP;
+select * from chainsysregister;
 
-CREATE TABLE CODE(ADMINID INT NOT NULL UNIQUE,CODE NUMBER(4) NOT NULL);
-SELECT * FROM CODE;
-commit;
+create table code(adminid number(10)not null unique,
+code number(4) not null unique);
+
+select * from code;
+
+create table signup(
+adminid number(10)not null unique,
+username varchar2(20)not null,
+email varchar2(30)not null,
+password varchar2(20),
+confirm_password varchar2(20),
+constraint pk_email primary key(email),
+foreign key(adminid) references code(adminid));
+
+select * from signup;
+
 INSERT INTO CODE VALUES(2109,1998);
 INSERT INTO CODE VALUES(2209,1999);
 INSERT INTO CODE VALUES(2309,2000);
 INSERT INTO CODE VALUES(2409,2001);
 INSERT INTO CODE VALUES(2509,2002);
 commit;
-
